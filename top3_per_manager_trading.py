@@ -20,7 +20,7 @@ def format_table(df):
     styled = df.style.format({
         "End Wgt": "{:.1f}%",
         "Delta Wgt": lambda x: f"{x:+.1f}%"
-    }).hide_index()
+    })
     return styled
 
 st.set_page_config(page_title="Top 3 Holdings by Manager", layout="wide")
